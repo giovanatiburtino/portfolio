@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================ HEADER ================ */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    color: #666666;
+    height: 55px;
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #cd23b3;
+}
+
+.pages{
+    width: 610px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+}
+
+.pages a{
+    padding: 4px 8px;
+}
+
+.pages a:hover{
+    background-color: lightgray;
+}
+
+.social-icons{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ================ HOME (index.html) ================ */
+
+.main-home{
+    min-height: calc(100vh - 55px); /* 100vh - tamanho do header */
+    display: flex;
+    align-items: center;
+}
+
+.section-home{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    background: -webkit-linear-gradient(#13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 9px solid #cd23b3;;
+}
+
+/* ================ ABOUT ME (about.html) ================ */
+
+.main-about{
+    min-height: calc(100vh - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about{
+    font-family: 'Poppins', sans-serif;
+    width: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about-work-item-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.section-about-work-item-content{
+    display: flex;
+}
+
+.section-about h1{
+    font-size: 36px;
+    color: #42446e;
+    margin: 32px 0;
+}
+
+.section-about h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+html body .section-about-time-tag{  /* Just to add selector priority */
+    background-color: #D7FFE0;
+    color: #018C0F;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 18px;
+    box-shadow: 0px 4px 8px 0px rgba(102,102,102,1);
+}
+
+.section-about p{
+    font-size: 18px;
+    color: #666666
+}
+
+.section-about span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #a7a7a7
+}
+
+.section-about-work, .section-about-education{
+    border-bottom: 2px solid lightgray;
+}
+
+.section-about-work-item{
+    height: 75px;
+}
+
+.content-work{
+    width: 250px;
+}
+
+.content-data{
+    margin-left: auto;
+}
+
+/* ================ TECH STACK (stack.html) ================ */
+
+.main-stack{
+    font-family: 'Poppins', sans-serif;
+    min-height: calc(100vh - 155px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.section-stack h1{
+    font-size: 42px;
+    color: #42446e;
+    margin: 32px 0;
+}
+
+.section-stack p{
+    font-size: 20px;
+    color: #666666;
+}
+
+.section-stack-icons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25vh;
+}
+
+/* ================ PROJECTS (projects.html) ================ */
+
+.main-projects{
+    font-family: 'Poppins', sans-serif;
+    min-height: calc(100vh - 155px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 50px
+}
+
+.section-projects-header{
+    margin-bottom: 100px;
+}
+
+.section-projects-header h1{
+    font-size: 36px;
+    color: #42446e;
+    margin: 20px 0;
+}
+
+.section-projects-header p{
+    font-size: 18px;
+    color: #666666;
+}
+
+.section-projects-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-card {
+    width: 375px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.project-card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.preview{
+    width: 375px;
+    height: 200px;
+}
+
+.project-card-content{
+    padding: 24px;
+    padding-bottom: calc(24px - 7px);
+    transform: translateY(-7px);
+}
+
+.project-card-content h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.project-card-content p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 16px;
+}
+
+.project-card-content .project-card-content-stacks {
+    color: #42446e;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.project-card-content-stacks span {
+    font-weight: 500;
+}
+
+.project-card-links {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: underline;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card-links a {
+    display: flex;
+    align-items: center;
+}
+
+.project-card-links a img {
+    margin-right: 10px;
+}
+
+/* ================ CONTACT (contact.html) ================ */
+
+.main-contact{
+    min-height: calc(70vh - 55px); /* 100vh - tamanho do header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1E0E62;
+    text-align: center;
+}
+
+#contact-content-email{
+    background: -webkit-linear-gradient(#13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-group-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #666666;
+}
+
+.footer-contact{
+    display: flex;
+    gap: 80px;
+    color: #42446E;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-size: 20px;
+    align-items: center;
+}
+
+.info-group-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.nav-group-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-group-footer a{
+    color: #42446E;
+    font-size: 18px;
+}
+
+.develop-by-footer{
+    color: #666666;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    mix-blend-mode: normal;
+}
+
+.logo-footer{
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #42446E;
+}
